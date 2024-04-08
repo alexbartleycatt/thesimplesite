@@ -534,6 +534,7 @@ p {
 
 .plancolumn {
   margin-top: 5px;
+  margin-bottom: 5px;
   padding-left: 0;
   padding-right: 0;
 }
@@ -841,6 +842,10 @@ p {
 
   .herotext {
     font-size: 40px;
+  }
+
+  .plancolumn {
+    margin-bottom: 10px;
   }
 
   .quick-stack-5 {
