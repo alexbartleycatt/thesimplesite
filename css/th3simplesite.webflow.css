@@ -4,9 +4,9 @@
   --orange: #ef843b;
   --yellow: #f8cf47;
   --white: white;
+  --green: #515b3a;
   --yellow20: rgba(248, 207, 71, .2);
   --purple20: rgba(92, 65, 93, .2);
-  --green: #515b3a;
   --black: black;
 }
 
@@ -70,11 +70,11 @@ p {
 }
 
 .basicsection {
-  min-height: 95vh;
   background-color: var(--light-green);
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 95vh;
   padding: 60px;
   display: flex;
 }
@@ -115,8 +115,8 @@ p {
 }
 
 .basicsection.short.top {
-  min-height: 45vh;
   justify-content: flex-end;
+  min-height: 45vh;
   padding-bottom: 0;
 }
 
@@ -126,21 +126,21 @@ p {
 }
 
 .basicsection.landing {
-  min-height: 0;
   justify-content: flex-end;
   align-items: center;
+  min-height: 0;
   margin-bottom: -40px;
   padding-bottom: 0;
 }
 
 .navbar {
   z-index: 99;
-  height: 80px;
   background-color: #fff;
   border-radius: 60px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  height: 80px;
   margin: 40px;
   padding: 10px;
   display: flex;
@@ -152,12 +152,12 @@ p {
 }
 
 .button {
-  min-width: 180px;
   background-color: var(--orange);
   text-align: center;
   border-radius: 30px;
   justify-content: center;
   align-items: center;
+  min-width: 180px;
   padding: 16px 30px;
   font-weight: 400;
   box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
@@ -227,16 +227,17 @@ p {
 }
 
 .div-block-2 {
-  width: 50%;
   flex-direction: column;
   align-items: stretch;
+  width: 50%;
 }
 
 .text-field {
-  height: 100%;
-  min-height: 50px;
+  color: var(--green);
   border: 1px #000;
   border-radius: 15px;
+  height: 100%;
+  min-height: 50px;
   font-size: 18px;
   font-weight: 400;
 }
@@ -267,13 +268,13 @@ p {
 }
 
 .card {
-  width: 400px;
   border: 5px solid var(--purple);
   background-color: var(--yellow20);
   border-radius: 50px;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  width: 400px;
   margin-bottom: 20px;
   padding: 20px;
   display: flex;
@@ -285,9 +286,9 @@ p {
 }
 
 .card.solid {
-  width: 360px;
   border-color: var(--purple);
   background-color: var(--yellow);
+  width: 360px;
   margin-left: 10px;
   margin-right: 10px;
   padding-bottom: 10px;
@@ -299,12 +300,12 @@ p {
 }
 
 .pill {
-  width: 100px;
-  height: 30px;
   background-color: var(--yellow);
   border-radius: 20px;
   justify-content: center;
   align-items: center;
+  width: 100px;
+  height: 30px;
   display: flex;
 }
 
@@ -508,8 +509,8 @@ p {
 }
 
 .blocker {
-  height: 100px;
   background-color: var(--light-green);
+  height: 100px;
   margin-top: -100px;
   position: relative;
   top: auto;
@@ -552,10 +553,10 @@ p {
 }
 
 ._70div {
-  max-width: 65vw;
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  max-width: 65vw;
   margin: 100px 40px 0;
   display: flex;
 }
@@ -574,13 +575,124 @@ p {
 }
 
 .sliderstyled {
-  height: 100%;
   background-color: rgba(221, 221, 221, 0);
+  height: 100%;
   margin-top: 60px;
 }
 
 .slide-nav {
   display: none;
+}
+
+.styledsection {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.contentdiv {
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 650px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+}
+
+.contentdiv.footer {
+  margin-bottom: 50px;
+}
+
+.styledimage.small {
+  width: 100px;
+}
+
+.styledheading {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.styledp {
+  text-align: justify;
+  font-size: 30px;
+  line-height: 130%;
+}
+
+.styledtext {
+  color: #333334;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 120%;
+  text-decoration: none;
+}
+
+.styledform {
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+  justify-content: center;
+  align-items: center;
+  font-family: Inconsolata, monospace;
+  display: flex;
+}
+
+.styledform.vertical {
+  flex-flow: column;
+}
+
+.styledtextfield {
+  color: #343334;
+  border: 2px solid rgba(52, 51, 52, .5);
+  border-radius: 6px;
+  margin-bottom: 0;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.styledbutton {
+  color: #fa4539;
+  background-color: rgba(56, 152, 236, 0);
+  border: 2px solid #fa4539;
+  border-radius: 20px;
+  padding: 10px 25px;
+  font-size: 20px;
+}
+
+.styledbutton:hover {
+  color: #fff;
+  background-color: #fa4539;
+}
+
+.styledbutton:active {
+  color: #fff;
+  background-color: #fa4539;
+  border-color: rgba(250, 69, 57, 0);
+}
+
+.linksdiv {
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.styledlink {
+  color: #333334;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 100%;
+  text-decoration: none;
+}
+
+.styledlink:hover, .styledlink.w--current {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 991px) {
@@ -702,6 +814,10 @@ p {
     margin-left: 30px;
     margin-right: 30px;
   }
+
+  .styledimage {
+    max-width: 80%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -736,6 +852,27 @@ p {
     margin-left: 25px;
     margin-right: 25px;
   }
+
+  .contentdiv {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .styledimage.small {
+    width: 90px;
+  }
+
+  .styledheading {
+    font-size: 40px;
+  }
+
+  .styledp, .styledtext, .styledlink {
+    font-size: 25px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -748,8 +885,8 @@ p {
   }
 
   .navbar {
-    height: 60px;
     justify-content: center;
+    height: 60px;
     margin: 20px 10px 10px;
     padding-left: 0;
     padding-right: 0;
@@ -850,6 +987,39 @@ p {
 
   .sliderstyled {
     margin-top: 40px;
+  }
+
+  .contentdiv {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .styledimage.small {
+    width: 80px;
+  }
+
+  .styledheading {
+    font-size: 30px;
+  }
+
+  .styledp, .styledtext {
+    font-size: 20px;
+  }
+
+  .styledform {
+    flex-flow: column;
+  }
+
+  .styledtextfield, .styledbutton {
+    font-size: 18px;
+  }
+
+  .styledlink {
+    font-size: 20px;
   }
 }
 
